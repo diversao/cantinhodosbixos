@@ -12,7 +12,7 @@ formaCaes.addEventListener("submit", (e) => {
     var nameCao = document.getElementById("nameCao").value;
     var sexoCao = document.getElementById("sexo").value;
     var racaCao = document.getElementById("racaCao").value;
-    // Regex para nao cadastrar item vazio ou com espaço
+    // Regex para nao cadastrar item vazio ou com espaço.
     if (nameCao.replace(/\s/g, "")=="") return      
     // Array é usado para criar Array de objetos
     let Cao = new Array();
