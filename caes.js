@@ -4,7 +4,7 @@
 //Receber o seletor do formulario
 var formaCaes = document.getElementById("formCaes");
 
-// Aguardar o usuario clicar no botao cadastrar do form
+// Aguardar o usuario clicar no botao cadastrar do form.
 formaCaes.addEventListener("submit", (e) => {
     // Nao recarregar a pagina
     e.preventDefault();
@@ -22,7 +22,7 @@ formaCaes.addEventListener("submit", (e) => {
         // Convert de String para Object
         Cao = JSON.parse(localStorage.getItem("Cao"));
     }
-    // Adicionar um novo objeto no array criado
+    // Adicionar um novo objeto no array criado.
     Cao.push({nameCao, sexoCao, racaCao})    
     // Salvar no localStorage
     localStorage.setItem("Cao", JSON.stringify(Cao));
