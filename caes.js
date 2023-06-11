@@ -26,7 +26,7 @@ formaCaes.addEventListener("submit", (e) => {
     Cao.push({nameCao, sexoCao, racaCao})    
     // Salvar no localStorage
     localStorage.setItem("Cao", JSON.stringify(Cao));
-    // Update a lista de racas
+    // Update a lista de racas.
     UpdateCaoList(Cao)
     // Limpar o input nome da raça
     document.getElementById("nameCao").value="";   
